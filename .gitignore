@@ -1,0 +1,107 @@
+# ============================================
+# JalRaksha - Git Ignore Configuration
+# ============================================
+
+# ----- ENVIRONMENT FILES (SECRETS!) -----
+.env
+*.env
+.env.local
+.env.production
+.env.development
+backend/.env
+
+# ----- PYTHON -----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+venv_win/
+.venv/
+env/
+ENV/
+**/venv/
+**/venv_win/
+**/.venv/
+backend/venv/
+backend/venv_win/
+backend/__pycache__/
+backend/**/__pycache__/
+*.egg-info/
+*.egg
+dist/
+build/
+eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ----- DATABASE FILES -----
+*.db
+*.sqlite
+*.sqlite3
+instance/
+backend/instance/
+backend/instance/*.db
+
+# ----- NODE.JS -----
+node_modules/
+jalraksha---water-health-monitor/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn
+
+# ----- BUILD OUTPUTS -----
+dist/
+build/
+.vite/
+*.local
+
+# ----- IDE AND EDITORS -----
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+.project
+.pydevproject
+.settings/
+
+# ----- OS FILES -----
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ----- LOGS -----
+*.log
+logs/
+
+# ----- TEMPORARY FILES -----
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# ----- ML MODEL FILES (large) -----
+*.pkl
+*.h5
+*.model
+models/trained/*.pkl
+backend/models/trained/*.pkl
+
+# ----- JUPYTER -----
+.ipynb_checkpoints/
+
+# ----- TEST/COVERAGE -----
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+coverage.xml
